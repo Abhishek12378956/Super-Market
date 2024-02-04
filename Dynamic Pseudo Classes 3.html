@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        #UserName:focus+div {
+            display: block;
+            color:goldenrod;
+        }
+        #UserName+div {
+            display: none;
+        }
+        #Email:read-only {
+            cursor: not-allowed;
+        }
+        button:disabled {
+            background-color: gray;
+            color:white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName">
+            <div><span class="bi bi-lightbulb"></span>Name in Block Letters</div>
+        </dd>
+        <dt>Email</dt>
+        <dd><input type="email" id="Email" value="john@gmail.com" readonly></dd>
+    </dl>
+    <button disabled>Register</button>
+</body>
+</html>

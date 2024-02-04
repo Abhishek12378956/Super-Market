@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav span::after {
+            content: " >> ";
+        }
+        nav span:last-child::after {
+            content: "";
+        }
+        nav span:last-child {
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>Home</span>
+        <span>Electronics</span>
+        <span>Mobiles</span>
+        <span>Realme</span>
+        <span>C55</span>
+    </nav>
+</body>
+</html>

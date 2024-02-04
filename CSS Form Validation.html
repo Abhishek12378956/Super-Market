@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required {
+            border:1px solid red;
+        }
+        input:optional {
+            border:1px solid goldenrod;
+        }
+        input:required+span {
+            color:red;
+            display: inline;
+            margin-left: 10px;
+        }
+        input:optional+span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text"><span>*</span></dd>
+            <dt>Password</dt>
+            <dd><input type="password" required><span>*</span></dd>
+            <dt>Mobile</dt>
+            <dd><input type="mobile" required><span>*</span></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
